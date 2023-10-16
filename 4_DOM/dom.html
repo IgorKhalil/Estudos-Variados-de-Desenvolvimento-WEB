@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(12,112,242);
+            color: white;
+        }
+        div{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body id="principal">
+    <div>
+        <h1> Aprendendo DOM</h1>
+        <p>Em 2016 coloquei como uma das metas do ano "Aprender a fazer um bom nhoque", mas foi só no final de 2018 que finalmente fiz um nhoque com cara e sabor de nhoque. Um prato que eu pensei "Eu pagaria por isso em um restaurante. Não pagaria muito caro, mas pagaria". E considerando meus talentos gastronômicos, pra mim isso foi uma baita conquista, que só foi possível porque eu me empenhei muito mais do que nos anos anteriores. Em um mês eu fiz mais nhoques (e tentativas de nhoques) do que a soma de todas as tentativas dos dois anos anteriores. Eu aprendi empiricamente que a repetição constante é um importante hábito para aprendermos a fazer algo que exige técnica, tal como escrever... Que é uma das minhas metas de 2019</p>
+        <button>Clique aqui</button>
+        <button> oi</button>
+    
+    </div>
+    <script>
+        // window.document.write('minha primeira manipulação DOM')
+        // window.alert('oi')
+        var x = window.document.getElementById('principal')
+        x.style.background = 'black'
+        var y = window.document.getElementsByTagName('button')[1]
+        y.innerHTML = 'sghoriuken'
+    </script>
+</body>
+</html>

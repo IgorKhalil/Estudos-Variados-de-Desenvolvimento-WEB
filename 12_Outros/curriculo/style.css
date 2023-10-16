@@ -1,0 +1,46 @@
+/*font-family: 'Gentium Book Plus', serif;
+font-family: 'Hubballi', cursive;*/
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+#header {
+    background-color: rgba(16, 88, 156, 0.932);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Gentium Book Plus', serif;
+}
+#nameAndTitle{
+    text-align: center;
+    background-color: white;
+    width: 400px;
+    margin: 0 auto;
+}
+#nameAndTitle h1, h2 {
+    margin: 0;
+}
+#contact{
+    list-style-type: none;
+}
+#contact i{
+    width: 30px;
+    color: rgba(16, 88, 156, 0.932);
+}
+#container{
+    grid-template-columns: 30% auto;
+    display: grid;
+    grid-column-gap: 15px;
+}
+#sidebar, #content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.card h3{
+    font-family: 'Gentium Book Plus', serif;;
+}
+.card{
+    font-family: 'Hubballi', cursive;
+    border: 1px solid rgb(207, 201, 201);
+    border-radius: 10px;
+    padding: 20px;
+}

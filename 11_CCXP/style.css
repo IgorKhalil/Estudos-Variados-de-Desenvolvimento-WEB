@@ -1,0 +1,79 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    background-color:#FFD900;
+    padding: 35px;
+}
+section{
+    display: grid;
+    grid-auto-flow: column;
+    
+    grid-template-columns: 1fr 1fr;
+}
+#areadotext{
+    background-color:#514988;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+#tituloareadotext{
+    color: #FFD900;
+    font-size: 60px;
+}
+#countVideo{
+    padding: 5px;
+    display: grid;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 30px;
+}
+.countDown{
+    display: grid;
+    grid-auto-flow: column;
+    font-size: 40px;
+    color: #514988;
+}
+#textcount{
+    color:#E33881;
+    font-size:30px ;
+    
+}
+rodape{
+    display: grid;
+    grid-auto-flow: column;
+    margin: 30px;
+    grid-template-columns: 1fr 1fr;
+    
+}
+rodape div p{
+    color: #FFD900;
+    font-size: 30px;
+    text-align:center;
+    font-weight: bold;
+}
+#estruturarodape{
+    margin-left: 10px;
+}
+rodape button{
+    background-color: #514988;
+    color: white;
+    border-radius: 15px;
+    width: 500px;
+    height: 150px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+#butao{
+    margin-top: 100px;
+    text-align: center;
+}
+button:hover{
+    cursor: pointer;
+    color: #FFD900;
+    transform: translateY(-10px);
+    transition: 1s;
+}
