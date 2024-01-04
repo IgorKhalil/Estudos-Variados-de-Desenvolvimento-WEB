@@ -2,7 +2,7 @@ const dia = document.getElementById("dia");
 const hora = document.getElementById("hora");
 const minuto = document.getElementById("minuto");
 const segundo = document.getElementById("segundo");
-const lancamento = "31 dec 2023"
+const lancamento = "31 dec 2024"
 
 function countDown(){
     const dataLanc = new Date(lancamento);
@@ -26,9 +26,22 @@ function formatoTempo( tempo ){
 countDown();
 setInterval(countDown, 1000)
 
-function highlightCard (selector) {
-    var element = querySelector(selector);
+function highlightCard (cardId) {
+    var element = document.getElementById(cardId);
     element.classList.toggle("card-highlight");
+}
+
+const ingressos = [];
+
+function selectCard(selector) {
+    var element = document.getElementById(selector);
+    element.classList.toggle("card-selected");
+    if (ingressos.includes(selector)) ingressos.pop(selector);
+    else ingressos.push(selector) 
+}
+
+function showSelectCards () {
+    if (ingressos.length > 0) alert("Ingressos selecionados:" + ingressos);
 }
 
 function checkKeyboardCode()
@@ -40,6 +53,7 @@ function checkKeyboardCode()
         alert(`tecla pressionada ${name} \r\n Key code: ${code}`);
     }, false);
 }
+
 function addKeyboardEventListeners () {
     document.addEventListener('keydown', (event) =>  {
 
@@ -75,5 +89,4 @@ function addKeyboardEventListeners () {
     } 
 } , false)
 }
-
 addKeyboardEventListeners();
